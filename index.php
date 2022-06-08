@@ -11,8 +11,8 @@ $db_table = "user_comments";
 
 $db = new PDO("mysql:host=$db_host;dbname=$db_base", $db_user, $db_password);
 $db->exec("set names utf8");
-$query = $db->prepare("SELECT * FROM `user_comments`");
-$query_DESC = $db->prepare("SELECT * FROM `user_comments`  ORDER BY `date` DESC");
+$query = $db->prepare("SELECT * FROM $db_table");
+$query_DESC = $db->prepare("SELECT * FROM $db_table  ORDER BY `date` DESC");
 $query->setFetchMode(PDO::FETCH_ASSOC);
 $query_DESC->setFetchMode(PDO::FETCH_ASSOC);
 $query->execute();
