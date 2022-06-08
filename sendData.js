@@ -30,7 +30,7 @@ window.addEventListener( "load", function () {
                                         '<h5 style="color: white">Отметок нравится :' +' '+ row['likes'] + '</h5>\n' +
                                         '<input onKeyPress="return false" id="id_element" name="id_element" type="number"  style="display: none" value="'+ row['id'] + '">\n' +
                                             '<input id="likes" type="number" name="likes" class="" style="display: none" value="' + row['likes'] + '"> \n' +
-                                                '<button class="btn btn-primary" type="submit">Нравится</button>\n' +
+                                                '<button class="btn btn-primary" type="submit" id="btn_id">Нравится</button>\n' +
                                     '</form>\n' +
                 '                </div>');
         } );
