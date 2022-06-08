@@ -21,7 +21,6 @@ window.addEventListener( "load", function () {
                 '                </form>'
             element.forEach(row => document.getElementById('result').innerHTML += '<div class="comment mt-4 col-12 " >\n' +
                 '                    <h4>'+ row['name'] +' </h4>\n' +
-                '                    <span>' + row['date'] +'</span>\n' +
                 '                    <br>\n' +
                                     '<br>\n' +
                                         '<h5 style="color: white">Номер телефона :' + ' ' +row['number'] +'</h5>\n' +

@@ -66,7 +66,6 @@ if (isset($_POST['true'])){
                 foreach ($response as $res){?>
                     <div class="comment col-12 mt-4" >
                         <h4 class="mt-3"><?php echo $res['name'] ?></h4>
-                        <span><?php echo $res['date'] ?></span>
                         <br>
                         <p><?php echo $res['msg'] ?></p>
                         <br>
@@ -85,7 +84,6 @@ if (isset($_POST['true'])){
                     foreach ($response_DESC as $res){?>
                         <div class="comment col-12 mt-4" >
                             <h4 class="mt-3"><?php echo $res['name'] ?></h4>
-                            <span><?php echo $res['date'] ?></span>
                             <br>
                             <p><?php echo $res['msg'] ?></p>
                             <br>
