@@ -16,7 +16,7 @@ try {
     $db = new PDO("mysql:host=$dbHost;dbname=$dbBase", $dbUser, $dbPassword);
     $db->exec("set names utf8");
     $data = array( 'likes' => $likes);
-    $query = $db->prepare("UPDATE $dbTable SET (likes) values(:likes) WHERE id = $idElement");
+    $query = $db->prepare("UPDATE $dbTable SET likes = $likes WHERE id = $idElement");
     $query->execute($data);
     $result = true;
 } catch (PDOException $e) {
